@@ -1,0 +1,15 @@
+<zk>
+    <config-name>zk-springboot-config</config-name>
+
+    <system-config>
+        <max-spare-threads>100</max-spare-threads>
+        <max-suspended-threads>100</max-suspended-threads>
+        <max-upload-size>5120</max-upload-size>
+        <max-process-time>3000</max-process-time>
+    </system-config>
+
+    <library-property>
+        <name>org.zkoss.bind.DebuggerFactory.enable</name>
+        <value>true</value>
+    </library-property>
+</zk>

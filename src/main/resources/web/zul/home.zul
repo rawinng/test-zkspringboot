@@ -1,0 +1,19 @@
+<?variable-resolver class="rawin.zktest.zk.SpringBeanResolver" ?>
+
+<zk>
+	<div viewModel="@id('vm') @init(helloVm)">
+		<vbox hflex="1" vflex="1">
+			<hbox>
+				What's your name:
+				<textbox value="@bind(vm.name)"/>
+			</hbox>
+
+			<button label="Say hi" onClick="@command('sayHi')"/>
+
+			<separator/>
+
+			<label value="@load(vm.welcomeText)"/>
+		</vbox>
+
+	</div>
+</zk>
